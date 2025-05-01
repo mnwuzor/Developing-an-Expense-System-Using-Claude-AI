@@ -1,0 +1,298 @@
+/* Custom Styles for Expense Tracker Application */
+
+/* Global Styles */
+body {
+    font-family: 'Roboto', 'Segoe UI', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.container-fluid {
+    padding: 0 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.card {
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    border: none;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+/* Header */
+h2 {
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Form Elements */
+.form-control, .form-select {
+    border-radius: 5px;
+    border: 1px solid #dce4ec;
+    padding: 10px 12px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 0 0.25rem rgba(52, 152, 219, 0.25);
+}
+
+.form-label {
+    color: #566573;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+/* Buttons */
+.btn {
+    border-radius: 5px;
+    padding: 8px 16px;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.btn-primary {
+    background-color: #3498db;
+    border-color: #3498db;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: #2980b9;
+    border-color: #2980b9;
+}
+
+.btn-danger {
+    background-color: #e74c3c;
+    border-color: #e74c3c;
+}
+
+.btn-danger:hover, .btn-danger:focus {
+    background-color: #c0392b;
+    border-color: #c0392b;
+}
+
+.btn-secondary {
+    background-color: #7f8c8d;
+    border-color: #7f8c8d;
+}
+
+.btn-secondary:hover, .btn-secondary:focus {
+    background-color: #95a5a6;
+    border-color: #95a5a6;
+}
+
+/* Tables */
+.table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+}
+
+.table th {
+    background-color: #f8f9fa;
+    color: #566573;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    padding: 12px 15px;
+    border-bottom: 2px solid #e9ecef;
+}
+
+.table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #e9ecef;
+    vertical-align: middle;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(52, 152, 219, 0.05);
+}
+
+/* Expense Row */
+.expense-row {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #e9ecef;
+    position: relative;
+    transition: box-shadow 0.3s;
+}
+
+.expense-row:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.remove-row {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: auto !important;
+}
+
+/* Select2 Customization */
+.select2-container--bootstrap-5 .select2-selection {
+    min-height: 40px;
+    padding: 0.375rem 0.75rem;
+}
+
+.select2-container--bootstrap-5 .select2-selection--single .select2-selection__rendered {
+    padding-left: 0;
+    color: #333;
+}
+
+/* Alert Messages */
+.alert {
+    border-radius: 5px;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    border: none;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.alert-warning {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+/* Modal Customization */
+.modal-content {
+    border-radius: 8px;
+    border: none;
+}
+
+.modal-header {
+    border-bottom: 1px solid #e9ecef;
+    background-color: #f8f9fa;
+    padding: 15px 20px;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.modal-footer {
+    border-top: 1px solid #e9ecef;
+    padding: 15px 20px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .container-fluid {
+        padding: 0 10px;
+    }
+    
+    .card-body {
+        padding: 15px;
+    }
+    
+    .expense-row {
+        padding: 15px;
+    }
+    
+    .table th, .table td {
+        padding: 8px 10px;
+        font-size: 0.85rem;
+    }
+    
+    .btn {
+        padding: 6px 12px;
+        font-size: 0.85rem;
+    }
+    
+    .form-label {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    .table th, .table td {
+        padding: 6px 8px;
+        font-size: 0.8rem;
+    }
+    
+    .btn {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    
+    .action-btns .btn {
+        width: auto;
+        margin-bottom: 0;
+    }
+}
+
+/* DataTables Customization */
+.dataTables_wrapper .dataTables_length, 
+.dataTables_wrapper .dataTables_filter, 
+.dataTables_wrapper .dataTables_info, 
+.dataTables_wrapper .dataTables_processing, 
+.dataTables_wrapper .dataTables_paginate {
+    margin-bottom: 15px;
+    color: #566573;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, 
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    background: #3498db;
+    color: white !important;
+    border: 1px solid #3498db;
+    border-radius: 4px;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background: #eaeaea;
+    color: #333 !important;
+    border: 1px solid #ddd;
+}
+
+/* Print Styles */
+@media print {
+    .no-print {
+        display: none !important;
+    }
+    
+    .table {
+        width: 100% !important;
+    }
+    
+    body {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .container-fluid {
+        width: 100%;
+        padding: 0;
+    }
+    
+    .card {
+        box-shadow: none;
+        border: none;
+    }
+}
